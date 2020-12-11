@@ -10,7 +10,7 @@ public class AplicacaoDiaSemanaEnum {
 	
 	public static void main(String[] args) {
 		
-		DiaSemanaEnum dia = DiaSemanaEnum.SEGUNDA;
+		DiaSemanaEnum dia = DiaSemanaEnum.DOMINGO;
 		
 		System.out.println(dia.toString() + " - " + dia.getValor());
 	}
