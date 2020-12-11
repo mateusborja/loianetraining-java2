@@ -3,7 +3,7 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-
+//aula 54 enum classe teste
 package com.mateusborja.java2.aula54;
 
 public class AplicacaoDiaSemanaEnum {
