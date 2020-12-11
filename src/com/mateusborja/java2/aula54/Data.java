@@ -3,7 +3,7 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-
+//aula 54 enum com construtor, metodo e atributo
 package com.mateusborja.java2.aula54;
 
 public class Data {
