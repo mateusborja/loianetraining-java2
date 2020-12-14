@@ -10,50 +10,50 @@ public enum Bebidas {
 
 	AGUA(4.75f, "500 ml", "Água") {
 		@Override
-		public float calcularVenda(int qtde) {
-			float venda = qtde * getValorUnidade();
+		public float calcularVenda(int quantidade) {
+			float venda = quantidade * getValorUnidade();
 			return venda;
 		}
 	},
 	REFRIGERANTE(8f, "400 ml", "Refrigerante") {
 		@Override
-		public float calcularVenda(int qtde) {
-			float venda = qtde * getValorUnidade();
+		public float calcularVenda(int quantidade) {
+			float venda = quantidade * getValorUnidade();
 			return venda;
 		}
 	},
 
 	SUCONATURAL(10f, "300 ml", "Suco Natural") {
 		@Override
-		public float calcularVenda(int qtde) {
-			float venda = qtde * getValorUnidade();
+		public float calcularVenda(int quantidade) {
+			float venda = quantidade * getValorUnidade();
 			return venda;
 		}
 
 	},
 	CAFE(5f, "200 ml", "Café") {
 		@Override
-		public float calcularVenda(int qtde) {
-			float venda = qtde * getValorUnidade();
+		public float calcularVenda(int quantidade) {
+			float venda = quantidade * getValorUnidade();
 			return venda;
 		}
 
 	},
 	CAPPUCCINO(7.75f, "300ml", "Cappuccino") {
 		@Override
-		public float calcularVenda(int qtde) {
-			float venda = qtde * getValorUnidade();
+		public float calcularVenda(int quantidade) {
+			float venda = quantidade * getValorUnidade();
 			return venda;
 		}
 	};
 
 	private float valorUnidade;
-	private String qtde;
+	private String quantidade;
 	private String tipo;
 
 	Bebidas(float valorUnidade, String qtde, String tipo) {
 		this.valorUnidade = valorUnidade;
-		this.qtde = qtde;
+		this.quantidade = qtde;
 		this.tipo = tipo;
 	}
 
@@ -62,7 +62,7 @@ public enum Bebidas {
 	}
 
 	public String getQtde() {
-		return qtde;
+		return quantidade;
 	}
 
 	public String getTipo() {
