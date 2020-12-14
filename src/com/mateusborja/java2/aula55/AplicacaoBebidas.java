@@ -52,19 +52,18 @@ public class AplicacaoBebidas {
 		Bebidas cappuccino = Bebidas.CAPPUCCINO;
 		System.out.println("vlr total do " + cappuccino.getTipo() + " R$ " + cappuccino.calcularVenda(4));
 
-		Bebidas bebidasConsumidas [] = Bebidas.values();
-		
+		Bebidas bebidasConsumidas[] = Bebidas.values();
+
 		bebidasConsumidas[0] = Bebidas.AGUA;
 		bebidasConsumidas[1] = Bebidas.SUCONATURAL;
 		bebidasConsumidas[2] = Bebidas.CAPPUCCINO;
 		bebidasConsumidas[3] = Bebidas.CAFE;
 		bebidasConsumidas[4] = Bebidas.SUCONATURAL;
-		
+
 		System.out.println();
 		for (Bebidas b : bebidasConsumidas) {
 			System.out.println(b.getTipo() + " R$ " + b.calcularVenda(3));
 		}
-		
 
 	}
 
