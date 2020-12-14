@@ -8,8 +8,44 @@ package com.mateusborja.java2.aula55;
 
 public enum Bebidas {
 
-	AGUA(4.75f, "500 ml", "Água"), REFRIGERANTE(8f, "400 ml", "Refrigerante"),
-	SUCONATURAL(10f, "300 ml", "Suco Natural"), CAFE(5f, "200 ml", "Café"), CAPPUCCINO(7.75f, "300ml", "Cappuccino");
+	AGUA(4.75f, "500 ml", "Água") {
+		@Override
+		public float calcularVenda(int qtde) {
+			float venda = qtde * getValorUnidade();
+			return venda;
+		}
+	},
+	REFRIGERANTE(8f, "400 ml", "Refrigerante") {
+		@Override
+		public float calcularVenda(int qtde) {
+			float venda = qtde * getValorUnidade();
+			return venda;
+		}
+	},
+
+	SUCONATURAL(10f, "300 ml", "Suco Natural") {
+		@Override
+		public float calcularVenda(int qtde) {
+			float venda = qtde * getValorUnidade();
+			return venda;
+		}
+
+	},
+	CAFE(5f, "200 ml", "Café") {
+		@Override
+		public float calcularVenda(int qtde) {
+			float venda = qtde * getValorUnidade();
+			return venda;
+		}
+
+	},
+	CAPPUCCINO(7.75f, "300ml", "Cappuccino") {
+		@Override
+		public float calcularVenda(int qtde) {
+			float venda = qtde * getValorUnidade();
+			return venda;
+		}
+	};
 
 	private float valorUnidade;
 	private String qtde;
@@ -32,5 +68,7 @@ public enum Bebidas {
 	public String getTipo() {
 		return tipo;
 	}
+
+	public abstract float calcularVenda(int qtde);
 
 }
