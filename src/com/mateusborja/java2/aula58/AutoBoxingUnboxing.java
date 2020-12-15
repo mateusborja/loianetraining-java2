@@ -6,7 +6,11 @@
 //aula 58 autoboxing e autounboxing - classe teste
 package com.mateusborja.java2.aula58;
 
+import java.util.ArrayList;
+
 public class AutoBoxingUnboxing {
+
+	private static ArrayList<Integer> arrList = new ArrayList<Integer>();
 
 	public static void main(String[] args) {
 
@@ -34,11 +38,24 @@ public class AutoBoxingUnboxing {
 		System.out.println(num2);
 		System.out.println(num3);
 
-		//mal uso do autoboxing // melhor utilizar os tipos primitivos
+		// mal uso do autoboxing // melhor utilizar os tipos primitivos
 		Double n1 = 15.5;
 		Double n2 = 5.5;
 		Double media = (n1 + n2) / 2;
 		System.out.println(media);
+
+		arrList.add(num9);
+		arrList.add(num1);
+
+		System.out.println("integers: ");
+		int count = 0;
+		for (Integer in : arrList) {
+			count += in;
+			System.out.println(in + " ");
+
+		}
+		
+		System.out.println("soma: " + count);
 
 	}
 
