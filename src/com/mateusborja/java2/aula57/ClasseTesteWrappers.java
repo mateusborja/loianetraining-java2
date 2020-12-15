@@ -55,6 +55,12 @@ public class ClasseTesteWrappers {
 		} else {
 			return;
 		}
+		
+		if(num17.equals(num18)) {
+			System.out.println("Numeros iguais");
+		} else {
+			System.out.println("Numeros diferentes");
+		}
 
 	}
 
