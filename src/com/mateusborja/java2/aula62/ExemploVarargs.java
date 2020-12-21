@@ -16,7 +16,7 @@ public class ExemploVarargs {
 		int arr[] = { 1, 2, 3, 4, 5, 6 };
 		System.out.println("soma vetor: " + soma(arr));
 
-		System.out.println("soma varargs: " + soma(1, 4, 52, 544, 23, 22, 3, 12));
+		System.out.println("soma varargs: " + soma(1, 4, 52, 1544, 23, 22, 3, 12));
 
 		int arr1[] = { 1, 2, 3 };
 		System.out.println("soma vetor e varargs: " + soma(arr1, 1, 2, 3));
