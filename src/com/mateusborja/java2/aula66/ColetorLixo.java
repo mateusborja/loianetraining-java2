@@ -20,7 +20,7 @@ public class ColetorLixo {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		Contato[] contatos = new Contato[10000];
 
@@ -39,9 +39,17 @@ public class ColetorLixo {
 		Runtime.getRuntime().runFinalization();
 		Runtime.getRuntime().gc();
 
-		System.out.println("Contatos removidos da memória");
 
-		obterMemoriaUsada();
+		
+		try {
+			
+			System.out.println("Contatos removidos da memória");
+			obterMemoriaUsada();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new Exception("Erros Message!");
+		}
 	}
 
 }
